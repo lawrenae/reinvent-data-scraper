@@ -23,3 +23,9 @@ the output is sent to stdout, so this can of course be redirected to a file (` >
 
 - python 3
 - beautifulsoup4
+
+## Testing
+
+```
+python tests/tests.py
+```
