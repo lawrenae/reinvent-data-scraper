@@ -61,13 +61,3 @@ def get_session_type(link):
 
 def __getSessionTimesDiv(link):
     return link.parent.parent.find('div', attrs={'class':'sessionTimes'})
-
-def __get_profile_item(soup_detail, profile_item_id, default_result):
-    result = default_result
-    rows = soup_detail.findAll('div', attrs={'id':profile_item_id})
-    if len(rows) > 0:
-        input_row = rows[0].find('input')
-        if input_row:
-            result = input_row.next_sibling
-
-    return result;
